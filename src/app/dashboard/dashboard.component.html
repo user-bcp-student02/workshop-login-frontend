@@ -10,6 +10,7 @@
 </header>
 
 <main class="content">
+  <p class="error" *ngIf="session.notice">{{ session.notice }}</p>
   <div class="state-row" *ngIf="loading">
     <span class="skeleton"></span>
     <span class="skeleton"></span>
